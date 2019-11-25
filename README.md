@@ -10,7 +10,7 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
 Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
 
-Analiza bolniškega staleža v Sloveniji. 
+## Analiza bolniškega staleža v Sloveniji. 
 
 Raziskala bom letni bolniški stalež v Sloveniji glede na starost, spol in statistično regijo. Pogledala bom bolniško odsotnost 
 
