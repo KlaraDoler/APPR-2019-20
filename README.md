@@ -10,9 +10,22 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
 Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
 
-## Analiza bolniškega staleža v Sloveniji. 
+# Analiza bolniškega staleža v Sloveniji. 
 
-Raziskala bom letni bolniški stalež v Sloveniji glede na starost, spol in statistično regijo. Pogledala bom bolniško odsotnost 
+Raziskala bom letni bolniški stalež v Sloveniji glede na starost, spol in statistično regijo. Pogledala bom skupine bolezni, gospodarske dejavnosti ter razloge za bolniško odsotnost.
+
+Za osnovni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: https://podatki.nijz.si/pxweb/sl/NIJZ%20podatkovni%20portal/?px_language=sl&px_db=NIJZ+podatkovni+portal&rxid=654d1805-716b-4850-9b81-8ba313857a41, kjer so podatki v obliki CSV, HTML in XLSX.
+
+Tabela 1: Kazalniki bolniškega staleža po spolu in starosti
+
+Tabela 2: Kazalniki po razlogih bolniškega staleža in spolu
+
+Tabela 3: Kazalniki bolniškega staleža po statističnih regijah in spolu
+
+Tabela 4: Kazalniki bolniškega staleža po spolu in gospodarskih dejavnosti
+
+
+Z analizo želim ugotoviti, v katerih regijah in gospodarskih dejavnosti prihaja do največje odsotnosti od dela, ter kaj so glavni razlogi zanjo.
 
 ## Program
 
