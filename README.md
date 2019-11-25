@@ -14,15 +14,17 @@ Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
 
 Raziskala bom letni bolniški stalež v Sloveniji glede na starost, spol in statistično regijo. Pogledala bom skupine bolezni, gospodarske dejavnosti ter razloge za bolniško odsotnost.
 
-Za osnovni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: https://podatki.nijz.si/pxweb/sl/NIJZ%20podatkovni%20portal/?px_language=sl&px_db=NIJZ+podatkovni+portal&rxid=654d1805-716b-4850-9b81-8ba313857a41, kjer so podatki v obliki CSV, HTML in XLSX.
+Za glavni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: https://podatki.nijz.si/pxweb/sl/NIJZ%20podatkovni%20portal/?px_language=sl&px_db=NIJZ+podatkovni+portal&rxid=654d1805-716b-4850-9b81-8ba313857a41, kjer so podatki v obliki CSV, HTML in XLSX.
 
-Tabela 1: Kazalniki bolniškega staleža po spolu in starosti
+TABELE:
 
-Tabela 2: Kazalniki po razlogih bolniškega staleža in spolu
+Tabela 1: Kazalniki bolniškega staleža po spolu in starosti, Slovenija, letno
 
-Tabela 3: Kazalniki bolniškega staleža po statističnih regijah in spolu
+Tabela 2: Kazalniki po razlogih bolniškega staleža in spolu, Slovenija, letno
 
-Tabela 4: Kazalniki bolniškega staleža po spolu in gospodarskih dejavnosti
+Tabela 3: Kazalniki bolniškega staleža po statističnih regijah in spolu, Slovenija, letno
+
+Tabela 4: Kazalniki bolniškega staleža po spolu in gospodarskih dejavnosti, Slovenija, letno
 
 
 Z analizo želim ugotoviti, v katerih regijah in gospodarskih dejavnosti prihaja do največje odsotnosti od dela, ter kaj so glavni razlogi zanjo.
