@@ -14,7 +14,7 @@ Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
 
 Raziskala bom letni bolniški stalež v Sloveniji glede na starost, spol in statistično regijo. Pogledala bom skupine bolezni, gospodarske dejavnosti ter razloge za bolniško odsotnost.
 
-Za glavni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: https://podatki.nijz.si/pxweb/sl/NIJZ%20podatkovni%20portal/?px_language=sl&px_db=NIJZ+podatkovni+portal&rxid=654d1805-716b-4850-9b81-8ba313857a41, kjer so podatki v obliki CSV, HTML in XLSX.
+Za glavni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: https://podatki.nijz.si/pxweb/sl/NIJZ%20podatkovni%20portal/?px_language=sl&px_db=NIJZ+podatkovni+portal&rxid=654d1805-716b-4850-9b81-8ba313857a41, kjer so podatki v obliki HTML, CSV in XLSX.
 
 TABELE:
 
