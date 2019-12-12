@@ -53,3 +53,17 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
 # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
 # fazah.
+
+
+library(readr)
+library(tidyr)
+library(dplyr)
+
+
+prva <- read_csv("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
+                   skip=3, na="-", locale=locale(encoding="Windows-1250"))
+
+kazalniki.spol.starost <- gather(prva, key=leto, value=primeri, na.rm=TRUE )
+
+
+
