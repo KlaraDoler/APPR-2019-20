@@ -1,6 +1,8 @@
 # 2. faza: Uvoz podatkov
 
-sl <- locale("sl", decimal_mark=",", grouping_mark=".")
+sl <- locales("sl", decimal_mark=",", grouping_mark=".")
+source("lib/libraries.r", encoding="UTF-8")
+
 
 # Funkcija, ki uvozi občine iz Wikipedije
 uvozi.obcine <- function() {
@@ -55,15 +57,62 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # fazah.
 
 
-library(readr)
+
+
 library(tidyr)
+library(readxl)
+library(data.table)
 library(dplyr)
+library(readr)
+library(ggplot2)
+library(abind)
+library(reshape2)
+
+
+#uvoz kazalniki spol starost
+
+uvozi.kazalniki_spol <- function(kazalnik) {
+  stolpci <- c("x", "Primeri", "Koledarski dnevi", "Odstotek BS", 
+               "Izgubljeni koledarski dnevi na zaposlenega", "Število primerov na 
+               100 zaposlenih", "Povprečno trajanje ene odsotnosti")
+  podatki <- read.csv2("podatki/kazalniki_spol_starost.csv",
+                       col_names=stolpci,
+                       locale=locale(encoding="Windows-1250"),
+                       skip=3, n_max=11) %>% .[, -(1:2)] %>%
+    melt(id.vars= "leta",  variable.name="kazalnik", value.name="stevilo") %>%
+    mutate(stevilo=parse_number(stevilo, na="N"))
+  
+}
+kazalniki_spol <- uvozi.kazalniki_spol()
+
+
+# Funkcija, ki uvozi podatke iz csv dokumenta
+#podatki.kazalniki <- read_csv("podatki/kazalniki_spol_starost.csv",
+#                              col_names=TRUE,
+#                              skip=3,
+#                              na="-",
+#                              n_max = 11,
+#                              locale=locale(encoding="Windows-1250", decimal_mark="."))
+
+# Prvemu stolpcu nastavimo novo ime
+#colnames(podatki.kazalniki)[1] <- "Kazalniki"
+
+# Tabelo preoblikujem s funkcijo melt
+#podatki.kazalniki <- melt(podatki.kazalniki, id.vars="Kazalniki", measure.vars=names(podatki.kazalniki)[-1],
+#                          
+#                          variable.name="Leto",value.name="Vrednost", na.rm=TRUE)
+
+
+
 
 
 prva <- read_csv("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
-                   skip=3, na="-", locale=locale(encoding="Windows-1250"))
+                 skip=3, na="-", locale=locale(encoding="Windows-1250"))
 
 kazalniki.spol.starost <- gather(prva, key=leto, value=primeri, na.rm=TRUE )
+
+
+
 
 
 
