@@ -18,7 +18,7 @@ Za glavni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: htt
 
 TABELE:
 
-Tabela 1: Kazalniki bolniškega staleža po spolu in starosti, Slovenija, letno
+Tabela 1: Kazalniki bolniškega staleža po starosti, Slovenija, letno
 
 Tabela 2: Kazalniki po razlogih bolniškega staleža in spolu, Slovenija, letno
 
