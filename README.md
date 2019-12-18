@@ -18,13 +18,13 @@ Za glavni vir podatkov bom imela Nacionalni inštitut za javno zdravje NIJZ: htt
 
 TABELE:
 
-Tabela 1: Kazalniki bolniškega staleža po starosti, Slovenija, letno
+Tabela 1: Kazalniki bolniškega staleža po starosti: Kazalniki, Leto, Število primerov
 
-Tabela 2: Kazalniki po razlogih bolniškega staleža in spolu, Slovenija, letno
+Tabela 2: Kazalniki po razlogih bolniškega staleža: Razlogi, Kazalniki, Leto, Število primerov
 
-Tabela 3: Kazalniki bolniškega staleža po statističnih regijah in spolu, Slovenija, letno
+Tabela 3: Kazalniki bolniškega staleža po statističnih regijah: Regija, Kazalniki, Leto, Število primerov
 
-Tabela 4: Kazalniki bolniškega staleža po spolu in gospodarskih dejavnosti, Slovenija, letno
+Tabela 4: Izgubljeni koledarski dnevi po gospodarskih dejavnosti: Gospodarska dejavnost, Kazalniki, Leto, Število primerov
 
 
 Z analizo želim ugotoviti, v katerih regijah in gospodarskih dejavnosti prihaja do največje odsotnosti od dela, ter kaj so glavni razlogi zanjo.
