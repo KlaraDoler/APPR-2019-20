@@ -1,6 +1,6 @@
 # 2. faza: Uvoz podatkov
 
-sl <- locales("sl", decimal_mark=",", grouping_mark=".")
+sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 source("lib/libraries.r", encoding="UTF-8")
 
 
@@ -106,7 +106,7 @@ kazalniki_spol <- uvozi.kazalniki_spol()
 
 
 
-prva <- read_csv("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
+prva <- read.csv2("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
                  skip=3, na="-", locale=locale(encoding="Windows-1250"))
 
 kazalniki.spol.starost <- gather(prva, key=leto, value=primeri, na.rm=TRUE )
