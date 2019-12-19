@@ -59,31 +59,23 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 
 
 
-library(tidyr)
-library(readxl)
-library(data.table)
-library(dplyr)
-library(readr)
-library(ggplot2)
-library(abind)
-library(reshape2)
 
+#funkcija, ki uvozi kazalniki_starost.csv
 
-#uvoz kazalniki spol starost
-
-uvozi.kazalniki_spol <- function(kazalnik) {
-  stolpci <- c("x", "Primeri", "Koledarski dnevi", "Odstotek BS", 
-               "Izgubljeni koledarski dnevi na zaposlenega", "Število primerov na 
-               100 zaposlenih", "Povprečno trajanje ene odsotnosti")
-  podatki <- read.csv2("podatki/kazalniki_spol_starost.csv",
+uvozi.kazalniki_starost <- function() {
+  
+  stolpci <- c("Starost", "Primeri", 2000:2018)
+  podatki <- read.csv2("podatki/kazalniki_starost.csv",
                        col_names=stolpci,
-                       locale=locale(encoding="Windows-1250"),
-                       skip=3, n_max=11) %>% .[, -(1:2)] %>%
-    melt(id.vars= "leta",  variable.name="kazalnik", value.name="stevilo") %>%
-    mutate(stevilo=parse_number(stevilo, na="N"))
+                       locale=locale(encoding="Windows-1250"))
+  #                       n_max=11) %>% .[, -(1:2)] %>%
+  podatki$Footnotes <- NULL
+  podatki$Code <- NULL
+  
+  return(podatki)
   
 }
-kazalniki_spol <- uvozi.kazalniki_spol()
+podatki <- uvozi.kazalniki_starost()
 
 
 # Funkcija, ki uvozi podatke iz csv dokumenta
@@ -106,10 +98,13 @@ kazalniki_spol <- uvozi.kazalniki_spol()
 
 
 
-prva <- read.csv2("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
-                 skip=3, na="-", locale=locale(encoding="Windows-1250"))
+#prva <- read.csv2("podatki/kazalniki_spol_starost.csv", col_names=c("Slovenija", 2000:2018),
+#                 skip=3, na="-", locale=locale(encoding="Windows-1250"))
 
-kazalniki.spol.starost <- gather(prva, key=leto, value=primeri, na.rm=TRUE )
+#kazalniki.spol.starost <- gather(prva, key=leto, value=primeri, na.rm=TRUE )
+
+
+
 
 
 

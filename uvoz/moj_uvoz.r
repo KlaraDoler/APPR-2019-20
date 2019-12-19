@@ -1,7 +1,3 @@
-library(tidyr)
-library(dplyr)
-library(readr)
-
 sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 source("lib/libraries.r", encoding="UTF-8")
 
@@ -16,3 +12,5 @@ tabela3 <- read_csv2("podatki/kazalniki_regije.csv", skip = 3, col_names = c("Re
 
 tabela4 <- read_csv2("podatki/gospod.dejavnost.csv", skip = 3, col_names = c("Gospodarska dejavnost", "Kazalniki", "Leto", "Število primerov"),
                      locale=locale(encoding="Windows-1250"))
+
+
